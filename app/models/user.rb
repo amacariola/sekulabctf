@@ -7,4 +7,6 @@ class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true
   validates_format_of :email, with: /@/
   validates :name, presence: true 
+
+  has_many :badges
 end
