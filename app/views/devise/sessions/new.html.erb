@@ -1,5 +1,6 @@
 <div class="jumbotron d-flex align-items-center min-vh-100 bg-white text-dark">
-<div class="form-signin">
+<div class="form-signin">`
+`
  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %> 
   <h1 class="h3 mb-3 font-weight-normal text-center">Please sign in</h1>
    <form>
@@ -21,10 +22,10 @@
       </div>
      <% end %>
     <div>
-     <%= f.submit "Log-in", class:"btn btn-lg btn-success btn-block" %>
+     <%= f.submit "Log-in", class:"btn btn-lg btn-success btn-block" %></br>
     </div> 
-     <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
      <%= render "devise/shared/links" %>
+     <p class="mt-5 mb-3 text-muted">&copy; Sekulab Cybersecurity Inc 2020-2021</p>
  <% end %>   
    </form>
 </div>
