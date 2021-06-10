@@ -1,0 +1,18 @@
+<% Challenge.all.each do |task| %>
+ <div class="col-md-4">
+  <div class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <h3 class="card-title"> <%= task.title %> </h3>
+          <p class="card-text"> <%= task.question %> </p>
+	  <p class="card-text"> <%= task.points %> Points </p>
+	   <small class="text-dark">Tag: <%= task.tag %> </small>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <a type="button" href="<%= task.link %>" class="btn btn-sm btn-primary text-white"> Download </a><br>
+                  <button type="button" class="btn btn-sm btn-success ">Submit Answer</button>
+              </div>
+            </div>
+      </div>
+   </div>
+ </div>
+<% end %>
