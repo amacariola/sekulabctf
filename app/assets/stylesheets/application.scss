@@ -15,6 +15,13 @@
  */
 
 @import "../stylesheets/bootstrap.min";
+@import "xterm/css/xterm";
+
+
+.bg-ctf {
+  background-image: url('2098508.jpg');  
+  background-size: cover;
+}
 
 .carousel-body {
   padding-top: 3rem;
@@ -67,7 +74,7 @@ footer p {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
-  z-index: 10;
+  z-index: 3;
 }
 
 /* Declare heights because of positioning of img element */
@@ -82,6 +89,11 @@ footer p {
   height: 32rem;
 }
 
+.overlay
+{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  background-size: cover;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -200,7 +212,7 @@ a:hover {
 html,
 .coverbody {
   height: 100%;
-  background: url('2098537.jpg');
+  background: url('2.jpg');
   background-size: cover;
 }
 
