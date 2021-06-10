@@ -8,5 +8,13 @@ class User < ApplicationRecord
   validates_format_of :email, with: /@/
   validates :name, presence: true 
 
-  has_many :badges
+  def active_for_authentication?
+    super && approved?
+  end
+
+  def inactive_message
+     approved? ? super : :not_approved
+  end
+    
+  
 end
